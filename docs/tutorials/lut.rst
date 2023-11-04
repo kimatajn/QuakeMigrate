@@ -21,7 +21,7 @@ In this example we use the WGS84 reference ellipsoid (used as standard by the Gl
 
     from pyproj import Proj
 
-    cproj = Proj(proj="longlat", ellps="WGS84", datum"=WGS84", no_defs=True)
+    cproj = Proj(proj="longlat", ellps="WGS84", datum="WGS84", no_defs=True)
     gproj = Proj(proj="lcc", lon_0=116.75, lat_0=6.25, lat_1=5.9, lat_2=6.6,
                  datum="WGS84", ellps="WGS84", units="km", no_defs=True)
 
